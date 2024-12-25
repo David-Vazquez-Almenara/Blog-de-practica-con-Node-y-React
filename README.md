@@ -1,6 +1,6 @@
 # Blog-Template-React-Nodejs
 
-****Antes de poner en marcha la aplicación, es necesario conectar la base de datos (backend, en ´.env´), ya que esta práctica está diseñada específicamente para trabajar la integración completa entre el backend, el frontend y el almacenamiento de datos.****
+****Antes de poner en marcha la aplicación, es necesario conectar la base de datos (backend, en '.env'), ya que esta práctica está diseñada específicamente para trabajar la integración completa entre el backend, el frontend y el almacenamiento de datos.****
 
 Este proyecto es un blog básico desarrollado con Node.js en el backend y React en el frontend. Su propósito principal es practicar la integración entre el backend y el frontend, enfocándose en la conexión con una base de datos y el uso de routers
 
