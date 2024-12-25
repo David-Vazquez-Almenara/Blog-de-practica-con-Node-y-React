@@ -1,0 +1,37 @@
+#Category-container-blog {
+    width: 100%;
+    margin: 0 auto; /* Añade margen automático a los lados para centrar el contenido */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola fila */
+    justify-content: center; /* Centra los elementos horizontalmente */
+  }
+  
+  .blog-item {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    max-width: 90%;
+    width: 90%; /* Asegura que el ancho del elemento sea el 100% del contenedor */
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -5%;
+  }
+  
+  .title-blog {
+    flex: 1;
+  }
+  
+  .author-date-blog {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: -50px;
+  }
+  
+  .author-date-blog p {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  

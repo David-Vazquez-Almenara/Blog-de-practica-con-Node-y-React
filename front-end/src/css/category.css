@@ -1,0 +1,224 @@
+/* category.css */
+
+.container {
+  width: 90vw; /* El contenedor ocupa el 90% del ancho de la ventana del navegador */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+#filter-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input {
+  text-align: center; /* Centra el texto horizontalmente dentro del input */
+  width: 50%; /* Ajusta el ancho del input */
+  padding: 5px;
+  box-sizing: border-box; /* Incluye el padding en el ancho total del input */
+  height: 100%; /* Hace que el input ocupe toda la altura del contenedor */
+  border: solid 2px black;
+  margin-right: 10px;
+}
+
+#clearFilterButton {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgb(175, 0, 0);
+  cursor: pointer; 
+  color: white;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px; 
+}
+
+select {
+  padding: 5px;
+  border: solid 2px black;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#Category-container {
+  width: 100%;
+  margin: 0 auto; /* Añade margen automático a los lados para centrar el contenido */
+  display: flex; /* Usa flexbox para alinear los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola fila */
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.category-item {
+  overflow: hidden;
+  display: flex; /* Utiliza flexbox para alinear los elementos en fila */
+  justify-content: space-between; /* Alinea los elementos en los extremos */
+  align-items: center; /* Centra verticalmente los elementos */
+  height: 50px;
+  max-width: 90%;
+  width: 90%;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5px auto; /* Aplica un margen superior e inferior de 10px y 0px a los lados */
+  padding: 10px;
+  cursor: pointer; /* Cambia el cursor a una mano al pasar por encima para indicar que es clickable */
+  position: relative; /* Para posicionar el menú relativo al item */
+}
+
+.category-item .titleAndDescription {
+  display: flex;
+  align-items: center;
+}
+
+.category-item .titleAndDescription h2 {
+  display: flex;
+  min-width: 350px;
+  max-width: 350px ;
+  margin-right: 10px;
+
+}
+
+.category-item .titleAndDescription p {
+  margin-right: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.category-item:hover {
+  background-color: lightgray; /* Cambia el color de fondo cuando el usuario pasa el ratón por encima */
+}
+
+.ranks-list {
+  display: flex; /* Utiliza flexbox para alinear los elementos en columna */
+  flex-direction: column; /* Alinea los elementos en una columna */
+  align-items: center; /* Centra verticalmente los elementos */
+  margin-left: auto; /* Empuja el listado de rangos hacia la derecha */
+  padding-left: 0; /* Quita el relleno izquierdo predeterminado de la lista */
+  list-style: none;
+}
+
+.ranks-list-item {
+  margin: 2px 0; /* Añade un pequeño margen inferior entre cada rango */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  text-align: right;
+}
+
+.options-button {
+  margin-left: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #555; /* Color de los tres puntos */
+}
+
+.options-menu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  padding: 20px;
+}
+
+.options-menu button {
+  display: block;
+  width: 100%;
+  padding: 10px 200px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.3s ease;
+  text-align: center;
+  background: #f0f0f0;
+
+  margin: 10px 0;
+}
+
+.options-menu button:hover {
+  background: #d6d6d6;
+}
+
+
+.options-menu .borrar {
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  padding: 10px 200px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.3s ease;
+  text-align: center;
+  text-align: center;
+  background-color: rgb(175, 0, 0);
+  color: white;
+}
+
+.options-menu .borrar:hover {
+  background-color: rgb(135, 0, 0);
+}
+
+.confirm-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirm-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.confirm-modal-content button{
+  margin: 20px;
+  padding: 10px 30px;
+}
+
+
+.drag-handle {
+  cursor: grab;
+  padding: 0 10px;
+  display: inline-block;
+  user-select: none;
+}
+
+.drag-handle-fixed {
+  cursor: no-drop;
+  padding: 0 10px;
+  display: inline-block;
+  user-select: none;
+  scale: 0.7;
+  rotate: -45deg;
+}
+
+.colorPicker{
+  margin-left: 20px;
+  width: 50px;
+  height: 30px;
+  padding: 0;
+}
+
+.arrastrarInfo{
+  color: rgb(94, 94, 94);
+  font-size: 15px;
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: -2px;
+}

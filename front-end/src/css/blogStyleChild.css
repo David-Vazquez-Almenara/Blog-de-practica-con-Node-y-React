@@ -1,0 +1,28 @@
+.blog-style-child-container {
+  padding: 20px;
+}
+
+.post-container {
+  width: 90vw; /* El contenedor ocupa el 90% del ancho de la ventana del navegador */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.post-content {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.post-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.post-content p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.post-content p:last-child {
+  margin-bottom: 0;
+}
